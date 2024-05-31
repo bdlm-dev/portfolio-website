@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind base;
+@tailwind base;
+
+.grey-hover {
+    @apply text-neutral-400;
+}
+
+.grey-hover:hover {
+    @apply text-neutral-600;
+}
