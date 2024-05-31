@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Experience from "../components/Position.astro";
+---
+
+<Layout title="am">
+	<main>
+		<p>
+			hey, i’m april!
+			i’m a keen student and developer
+			interested in software development, data, ML, and UX.
+			i like building stuff and solving problems.
+		</p>
+
+		<ol class="my-4">
+			<li> <Experience title="Computer Science BSc" location="Brunel University London" start="09/2023"/>
+			<li> <Experience title="Software Developer" location="Brunel Talent Marketplace" start="10/2023"/>
+		</ol>
+
+		<div class="grid grid-cols-2">
+			<!--
+			TODO: Implement API route to fetch top projects, can implement database with a priority, something like that
+			TODO: Implement component to handle received project info
+			-->
+
+		</div>
+	</main>
+</Layout>

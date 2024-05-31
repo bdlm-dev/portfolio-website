@@ -1,0 +1,23 @@
+---
+interface Props {
+  label: string,
+  url: string
+}
+
+const {label, url} = Astro.props;
+---
+
+<a href={url} aria-label={label} class="contact-link grey-hover" target="_blank" rel="external nofollow noopener noreferrer">
+  <slot />
+</a>
+
+<style is:global>
+  .contact-link > svg {
+    @apply fill-neutral-400;
+    transition: all 100ms ease;
+  }
+
+  .contact-link:hover > svg {
+    @apply fill-neutral-200
+  }
+</style>

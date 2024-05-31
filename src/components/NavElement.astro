@@ -1,0 +1,13 @@
+---
+import '../styles/util.css';
+interface Props {
+  link: string,
+  content: string
+}
+
+const { link, content } = Astro.props;
+---
+
+<a href={link} class="grey-hover">
+  <span>{content}</span>
+</a>

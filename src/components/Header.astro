@@ -1,0 +1,15 @@
+---
+import NameBrand from './NameBrand.astro';
+import NavElement from "./NavElement.astro";
+
+---
+
+<nav class="flex flex-row w-full gap-4">
+  <NameBrand/>
+  <div class="mx-auto"></div>
+  <div class="flex gap-4">
+    <NavElement link="/blog" content="blog"/>
+    <NavElement link="/portfolio" content="portfolio"/>
+    <NavElement link="/contact" content="contact"/>
+  </div>
+</nav>
