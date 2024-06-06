@@ -4,8 +4,30 @@
 
 .grey-hover {
     @apply text-neutral-400;
+    :hover {
+        @apply text-neutral-200;
+    }
+    :active {
+        @apply text-sky-600
+    }
 }
 
-.grey-hover:hover {
-    @apply text-neutral-600;
+
+.tooltip {
+    @apply invisible absolute;
+}
+.has-tooltip:hover .tooltip {
+    @apply visible z-50;
+}
+
+.project-tech {
+    .has-tooltip {
+        @apply transition-opacity ease-in-out
+    }
+    .has-tooltip:hover {
+        opacity: 1!important;
+    }
+    &:has(.has-tooltip:hover) .has-tooltip {
+        opacity: 0.5;
+    }
 }

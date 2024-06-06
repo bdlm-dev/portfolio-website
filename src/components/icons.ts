@@ -1,0 +1,70 @@
+import type {IconTypes} from "solid-icons";
+
+import {
+    SiAstro,
+    SiCss3,
+    SiHtml5,
+    SiJavascript,
+    SiTypescript,
+    SiReact,
+    SiSvelte,
+    SiTailwindcss,
+    SiPython,
+    SiCsharp,
+    SiGit,
+    SiGithub,
+    SiRust,
+    SiNetlify,
+    SiSolid,
+    SiAmazonaws,
+    SiAwslambda,
+    SiAmazondynamodb,
+    SiAmazonapigateway,
+    SiAmazons3
+} from 'solid-icons/si'
+
+export const icon_map : { [key: string]: IconTypes } = {
+    'css': SiCss3,
+    'html': SiHtml5,
+    'javascript': SiJavascript,
+    'typescript': SiTypescript,
+    'react': SiReact,
+    'svelte': SiSvelte,
+    'tailwind': SiTailwindcss,
+    'python': SiPython,
+    'csharp': SiCsharp,
+    'git': SiGit,
+    'github': SiGithub,
+    'rust': SiRust,
+    'astro': SiAstro,
+    'netlify': SiNetlify,
+    'solidjs': SiSolid,
+    'aws': SiAmazonaws,
+    'aws lambda': SiAwslambda,
+    'aws apigateway': SiAmazonapigateway,
+    'aws dynamodb': SiAmazondynamodb,
+    'aws s3': SiAmazons3
+}
+
+export const label_map : { [key: string]: string } = {
+    'css': "CSS3",
+    'html': "HTML5",
+    'javascript': "JavaScript",
+    'typescript': "TypeScript",
+    'react': "ReactJS",
+    'svelte': "Svelte",
+    'tailwind': "Tailwind CSS",
+    'python': "Python3",
+    'csharp': "C#",
+    'git': "git",
+    'github': "GitHub",
+    'rust': "Rust",
+    'astro': "Astro",
+    'netlify': "Netlify",
+    'solidjs': "SolidJS",
+    'aws': "AWS",
+    'aws lambda': "AWS Lambda",
+    'aws apigateway': "AWS API Gateway",
+    'aws dynamodb': "AWS DynamoDB",
+    'aws s3': "AWS S3"
+}

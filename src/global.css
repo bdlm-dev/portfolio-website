@@ -2,10 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.grey-hover {
-  @apply text-neutral-400;
-}
-
-.grey-hover:hover {
-  @apply text-neutral-600;
-}

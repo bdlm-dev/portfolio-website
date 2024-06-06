@@ -1,6 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Experience from "../components/Position.astro";
+import PositionSection from "../components/PositionSection.tsx";
+import ProjectSection from "../components/ProjectSection.tsx";
+
+const isDev = import.meta.env.IS_DEV;
 ---
 
 <Layout title="home">
@@ -12,17 +15,8 @@ import Experience from "../components/Position.astro";
 			i like building stuff and solving problems.
 		</p>
 
-		<ol class="my-4">
-			<li> <Experience title="Computer Science BSc" location="Brunel University London" start="09/2023"/>
-			<li> <Experience title="Software Developer" location="Brunel Talent Marketplace" start="10/2023"/>
-		</ol>
+		<PositionSection client:only="solid-js" isDev={isDev}/>
 
-		<div class="grid grid-cols-2">
-			<!--
-			TODO: Implement API route to fetch top projects, can implement database with a priority, something like that
-			TODO: Implement component to handle received project info
-			-->
-
-		</div>
+		<ProjectSection client:only="solid-js" isDev={isDev}/>
 	</main>
 </Layout>
