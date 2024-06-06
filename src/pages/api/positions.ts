@@ -5,8 +5,6 @@ export const GET: APIRoute = async ({ request }) => {
     const limit = requestURL.searchParams.get("limit");
     const isDev = requestURL.searchParams.get("isDev") == "true";
 
-    await new Promise(r => setTimeout(r, 100))
-
     if (isDev) {
         // simulated delay
         // await new Promise(r => setTimeout(r, 300))
