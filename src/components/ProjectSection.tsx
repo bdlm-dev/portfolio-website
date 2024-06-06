@@ -20,7 +20,7 @@ const Projects = (props: { limit: number, isDev: boolean }) => {
             ) :
             <Suspense fallback={<ProjectSkeleton n={2}/>}>
                 <For each={projects()}>
-                    {(pos, i) => <Project content={pos}/>}
+                    {(pos) => <Project content={pos}/>}
                 </For>
             </Suspense>
         }

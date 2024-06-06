@@ -22,7 +22,7 @@ const Positions = (props: { limit: number, isDev: boolean }) => {
                 ) :
                 <Suspense fallback={<PositionSkeleton n={3}/>}>
                     <For each={positions()}>
-                        {(pos, i) => <Position content={pos}/>}
+                        {(pos) => <Position content={pos}/>}
                     </For>
                 </Suspense> }
     </>
